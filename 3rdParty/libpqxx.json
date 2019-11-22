@@ -1,0 +1,25 @@
+{
+    "name": "libpqxx",
+    "source": "@GEM@/External/libpqxx/6.4.5.PG11",
+    "description": "Libpqxx PostgreSQL library",
+    "includes": [
+        "include"
+    ],
+    "lib_required": "True",
+	"shared_required": "False",
+    "platform": {
+        "win_x64_vs2013": {
+            "libpath": [
+                "lib"
+            ],
+            "lib_release": [
+                "libpqxx.lib", "libpqxx_static.lib"
+            ],
+			"lib_debug": [
+                "libpqxx.lib", "libpqxx_staticD.lib"
+            ]
+        },
+        "win_x64_vs2015": "@win_x64_vs2013",
+        "win_x64_vs2017": "@win_x64_vs2013"
+    }
+}

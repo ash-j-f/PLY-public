@@ -1,0 +1,36 @@
+{
+    "auto": {
+        "Include": [
+			"Include/PLY/Log.hpp",
+			"Include/PLY/PLYTools.h",
+			"Include/PLY/PLYTypes.h",
+            "Include/PLY/PLYRequestBus.h",
+			"Include/PLY/PLYResultBus.h",
+			"Include/PLY/PLYConfiguration.hpp",
+			"Include/PLY/PLYObjectSyncDataStringBus.h",
+			"Include/PLY/PLYObjectSyncSaveLoadBus.h",
+			"Include/PLY/PLYObjectSyncEntitiesBus.h"
+        ],
+      "Source": [
+        "Source/PLYSystemComponent.h",
+        "Source/PLYModule.cpp",
+        "Source/PLYSystemComponent.cpp",
+        "Source/Components/PLYConfigurationComponent.h",
+        "Source/Components/PLYConfigurationComponent.cpp",
+		"Source/Components/PLYObjectSyncComponent.h",
+		"Source/Components/PLYObjectSyncComponent.cpp",
+        "Source/Worker.h",
+        "Source/Worker.cpp",
+        "Source/WorkManager.h",
+        "Source/WorkManager.cpp",
+        "Source/PLYLog.h",
+        "Source/PLYLog.cpp",
+		"Source/StatsCollector.h",
+		"Source/StatsCollector.cpp",
+        "Source/Benchmark.h",
+        "Source/Benchmark.cpp",
+        "Source/Console.h",
+        "Source/Console.cpp"
+      ]
+    }
+}

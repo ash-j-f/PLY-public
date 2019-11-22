@@ -1,0 +1,15 @@
+{
+    "GemFormatVersion": 4,
+    "Uuid": "8e5b5e01df344dc78dd024db9793b58b",
+    "Name": "PLY",
+    "DisplayName": "PLY - PostgreSQL Database Connector",
+    "Version": "0.1.0",
+    "Summary": "PostgreSQL connector for self hosted databases",
+    "Tags": ["database","postgresql","postgres","connector","ply"],
+    "IconPath": "preview.png",
+    "Modules": [
+        {
+            "Type": "GameModule"
+        }
+    ]
+}
