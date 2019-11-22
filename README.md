@@ -8,7 +8,7 @@ PLY stands for "PostgreSQL for Lumberyard". While Amazon provides Gems (self con
 
 PLY provides a connection pool combined with a worker thread pool, which allows the simultaneous processing of multiple queries from a query queue. Results are returned to a results queue.
 
-PLY is written specially for Lumberyard, allows easy setup and integration with Lumberyard projects, and includes database connection and query pool management via editor tools. It uses the Lumberyard event bus system (ebus) to take requests from other modules, and to return results. Example implementations are also provided (See the XXXXXXXX repository).
+PLY is written specially for Lumberyard, allows easy setup and integration with Lumberyard projects, and includes database connection and query pool management via editor tools. It uses the Lumberyard event bus system (ebus) to take requests from other modules, and to return results. Example implementations are also provided (See the https://github.com/ash-j-f/CaelumMagnaVR-public repository).
 
 ## How does it work?
 
@@ -269,7 +269,7 @@ eg: PLY::PLYRequestBus::Broadcast(&PLY::PLYRequestBus::Events::RemoveResult, que
 	
 PLY includes the PLYObjectSyncComponent (PLYObjectSyncComponent class), which allows for automatic serialisation of object data and storage of that data in the database. The data can then be retrieved to restore an object's state at any time.
 		
-For an example implementation of object serialisation using PLY, see the repository XXXXXXXX.
+For an example implementation of object serialisation using PLY, see the repository https://github.com/ash-j-f/CaelumMagnaVR-public.
 		
 The PLYObjectSyncComponent must be added to each Lumberyard game entity you want to save to, or load from, the database. The component can be added via the Lumberyard Editor.
 		
