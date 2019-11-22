@@ -374,7 +374,7 @@ ply set stats_interval 5
 
 PLY was created by Ashley Flynn https://ajflynn.io/ while studying a degree in software engineering at the Academy of Interactive Entertainment and the Canberra Institute of Technology in 2019.
 	
-Special thanks to Dr. Coryn Bailer-Jones for providing star survery distance estimate data which was used in the Star Map demonstration project that implements the PLY Gem http://www2.mpia-hd.mpg.de/homes/calj/gdr2_distances/main.html
+Special thanks to Dr. Coryn Bailer-Jones for providing star survery distance estimate data http://www2.mpia-hd.mpg.de/homes/calj/gdr2_distances/main.html which was used in the Star Map demonstration project that implements the PLY Gem https://github.com/ash-j-f/CaelumMagnaVR-public.
 	
 And special thanks also go to Josh Beacham for assistance with Amazon Lumberyard code and setup.
 	
