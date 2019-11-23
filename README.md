@@ -20,6 +20,18 @@ The host application is then (optionally) notified of returned results via the L
 	
 This architecture allows for any number of queries to be added to a queue and then processed simultaneously and asynchronously, with the host application's main thread continuing uninterrupted until query results are ready.
 
+## A Note on Security
+
+***The intended use-case for PLY is accessing a database hosted on the same PC as the application, or on a local network.*** Connecting to a remotely hosted database is also possible, and PLY supports connection encryption options.
+
+Typically a connector like PLY would be used for simulations and research, where a single instance of an application is connecting to the database, or as a connector used by cloud-based game servers that need to access large volumes of data such as open-world topology/object databases, user acount or inventory databases, and so on, from a database located in the same data centre.
+
+As PLY uses SQL strings to communicate with the database directly, ***you should NOT use PLY in a client-side application, such as the client-side part of a multiplayer game that players install on their own PC***, which then communicates with a remote server you provide. Malicious users could alter the SQL strings your application sends, or access your database directly using the credentials embedded in your application. This may allow them to gain unauthorised access to your database or even to the system that is hosting it.
+
+Support for prepared SQL statements, which helps prevent SQL injection within the application, is planned to be added in the near future. However this does not mitigate the above security considerations.
+
+Be sure that you understand the security implications of installing and using PostgreSQL, and that your firewall settings are configured to prevent unauthorised access to your database and server. Please visit https://www.postgresql.org/ for further advice on PostgreSQL configuration and security.
+
 ## Version
 
 This version of PLY is built using:

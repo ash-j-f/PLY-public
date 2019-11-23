@@ -1,4 +1,4 @@
-// Becnhmark class that provides query benchmarking functionality for the PLY Gem.
+// Benchmark class that provides query benchmarking functionality for the PLY Gem.
 // @author Ashley Flynn - https://ajflynn.io/ - The Academy of Interactive Entertainment and the Canberra Institute of Technology - 2019
 
 #pragma once
@@ -25,7 +25,7 @@ namespace PLY
 		Benchmark(PLYSystemComponent *psc, const Mode &m, const int &passes, const AZStd::string filenamePrefix);
 		~Benchmark();
 
-		//Run becnhmark.
+		//Run benchmark.
 		void Run();
 
 		//Stop current benchmark.
