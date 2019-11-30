@@ -20,6 +20,8 @@ The host application is then (optionally) notified of returned results via the L
 	
 This architecture allows for any number of queries to be added to a queue and then processed simultaneously and asynchronously, with the host application's main thread continuing uninterrupted until query results are ready.
 
+![PLY Logo](architecture-cropped.png)
+
 ## A Note on Security
 
 ***The intended use-case for PLY is accessing a database hosted on the same PC as the application, or on a local network.*** Connecting to a remotely hosted database is also possible, and PLY supports connection encryption options.
